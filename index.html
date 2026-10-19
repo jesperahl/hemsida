@@ -4,396 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jesper Ahlcrona</title>
-    <link rel="stylesheet" href="https://use.typekit.net/rwm8feb.css" />
     <style>
+      html,
       body {
-        font-family: "tahoma", sans-serif;
+        height: 100%;
         margin: 0;
-        padding: 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "tahoma", sans-serif;
+        font-size: 12px;
         color: rgb(26, 26, 26);
         background-color: #f4f4f4;
-        font-size: 12px
+        text-align: center;
       }
-      h1,
-      h2 {
-        font-weight: 500;
-        font-size: 12px;
-      }
-      p {
-        font-size: 12px;
-      }
-
       h1 {
-        margin-top: 1.5em;
-        margin-bottom: 1em;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0 0 0.6em;
       }
-
-      h2 {
-        margin-top: 1.5em;
-        margin-bottom: 1em;
-      }
-
-      p {
-        margin-bottom: 1em;
-      }
-      .container {
-        display: flex;
-        justify-content: center;
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 4rem 4rem;
-        padding-top: 0;
-        gap: 1rem 2rem;
-      }
-
-      .left,
-      .middle {
-        flex: 0 0 1;
-        min-height: 100px;
-        min-width: 200px;
-      }
-
-      .right {
-        flex: 1;
-        max-width: 800px;
-          overflow-x: hidden; 
-
-      }
-
-      .middle ul {
-        list-style: none;
-        padding: 0;
-        margin: 10px 0 30px;
-      }
-
-      .middle li {
-        margin-bottom: 4px;
-      }
-
       a {
         color: rgb(26, 26, 26);
-
         text-decoration: none;
-        cursor: pointer;
         transition: color 0.3s ease;
       }
-
       a:hover {
         color: #e7c34b;
-      }
-
-      .project {
-        display: none;
-        margin-bottom: 40px;
-      }
-
-      .video-wrapper {
-        position: relative;
-        width: 100%;
-        max-width: 100%;
-        overflow: hidden;
-        padding-bottom: 56.25%;
-        height: 0;
-      }
-
-      .video-wrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-      }
-      #backButton {
-        background-color: transparent;
-        border: 0px solid #1a1a1a;
-        font-size: 12px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        padding: 0rem;
-      }
-      #backButton:hover {
-        color: #e7c34b;
-      }
-
-      @media (max-width: 1000px) {
-        .container {
-          flex-direction: column;
-          padding: 0rem;
-        }
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <!-- Vänster kolumn -->
-      <aside class="left">
-        <h1>Jesper Ahlcrona</h1>
-        <!-- Mejladressen byggs ihop med JavaScript så att spamrobotar inte hittar den i koden -->
-        <a id="email" href="#">jesper [at] ahlcrona [punkt] co</a>
-        <script>
-          (function () {
-            var u = "repsej".split("").reverse().join("");
-            var d = "oc.anorclha".split("").reverse().join("");
-            var adress = u + "\u0040" + d;
-            var lank = document.getElementById("email");
-            lank.href = "mai" + "lto:" + adress;
-            lank.textContent = adress;
-          })();
-        </script>
-      </aside>
-
-      <!-- Mittenkolumn med navigationslänkar -->
-      <aside class="middle">
-        <h2>Regi</h2>
-        <ul>
-          <li>
-            <a href="#ner-till-min-far">Ner till min far (2025)</a>
-          </li>
-        </ul>
-        <h2>Research</h2>
-        <ul>
-          <li>
-            <a href="#i-huvudet-pa-bo">I huvudet på Bo (2025)</a>
-          </li>
-          <li>
-            <a href="#skiftet">Skiftet (2025)</a>
-          </li>
-          <li>
-            <a href="#sverige-och-kriget">Sverige och kriget (2025)</a>
-          </li>
-          <li>
-            <a href="#the-pirate-bay">The Pirate Bay (2024)</a>
-          </li>
-          <li>
-            <a href="#helikopterranet">Helikopterrånet (2024)</a>
-          </li>
-        </ul>
-      </aside>
-
-      <!-- Höger kolumn med projektinfo -->
-      <main class="right">
-        <h2 id="projectInfoHeading">Projektinfo</h2>
-
-        <!-- Projekt 1: Ner till min far -->
-        <div id="ner-till-min-far" class="project">
-            <p>
-<p>
-  <em>Ner till min far</em> är en dokumentär om uppbrott, sorg och
-  ensamheten som följer när föräldrar försvinner – och om att ta hand
-  om ett barn samtidigt som man sörjer dem man själv förlorat. 
-  Producerad för SVT.
-</p>
-<p>
-    Om filmen
-  </a>
-</p>
-
-<p>
-  <a
-    href="https://www.dn.se/kultur/johan-croneman-filmen-om-jonas-lundqvist-rusar-rakt-in-mitt-pacemakerkryddade-hjarta/"
-    target="_blank"
-    rel="noopener"
-  >
-    Johan Croneman: Filmen om Jonas Lundqvist rusar rakt in mitt pacemakerkryddade hjärta
-  </a>
-</p>
-
-          </p>
-          <div class="video-wrapper">
-            <iframe
-              src="https://player.vimeo.com/video/1075686108?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameborder="0"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-
-        <!-- Projekt 2: Sverige och kriget -->
-        <div id="sverige-och-kriget" class="project">
-          <p>
-            <em>Sverige och kriget</em> är en dokumentärserie om hur Sverige
-            påverkades av andra världskriget. Genom brev, dagböcker och filmer
-            från vanliga människor får vi följa livet i landet under åren
-            1939–1945. Serien visar rädslan för kriget, spioner i Stockholm och
-            vardagen som fortsatte trots allt. Den berättar också om hur
-            Sveriges val att vara neutralt påverkade både folket och landets
-            framtid.
-          </p>
-          <p>Dokumentärserie producerad av SVT.</p>
-          </p>
-          </p>
-          <div class="video-wrapper">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube-nocookie.com/embed/8Rlha94pHB0?si=61alQD28jEvGrMOV"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-
-        <!-- Projekt 3: I huvudet på Bo -->
-        <div id="i-huvudet-pa-bo" class="project">
-          <p>
-            <em>I huvudet på Bo</em> skildrar Bo Widerbergs resa från 1960-talets Malmö, där han arbetade som författare och filmkritiker, till framgångarna som regissör i Stockholm och de internationella äventyren i Cannes och New York. Filmen utforskar också de personliga kostnaderna för hans konstnärliga vision och hur hans strävan efter liv och autenticitet påverkade både honom själv och människorna omkring honom.
-          </p>
-          <p>Dokumentärfilm producerad för SVT.</p>
-          <p>
-          </p>
-          <div class="video-wrapper">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube-nocookie.com/embed/zKjLe1Z6DZA?si=nye4Sj6GwlXNcNk1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-
-        <!-- Projekt 4: Skiftet -->
-        <div id="skiftet" class="project">
-          <p>
-            1958 tar Sveriges första kvinnliga polis examen. Serien följer en liten grupp pionjärer som kliver in i en mansdominerad yrkeskår och tar ett avgörande steg mot jämställdhet. Men vägen dit kantas av motstånd och förnedrande villkor – inte minst när de uniformskjolar de tvingas bära blir en tydlig markör för gränser som snart kommer att överskridas.
-          </p>
-            Dramaserie producerad för Netflix.
-          </p>
-          <div class="video-wrapper">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/ibhSobtA84k?si=EUAV3rb8isQTGmup"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-
-        <!-- Projekt 5: The Pirate Bay -->
-        <div id="the-pirate-bay" class="project">
-          <p>
-            Tre unga män skapar en sajt som på några år blir världens största
-            fildelningsplattform. <em>The Pirate Bay</em> bygger på verkliga
-            händelser och skildrar den digitala revolutionen som skakade
-            underhållningsindustrin i grunden.
-          </p>
-            Dramaserie producerad för SVT.
-          <p>
-          </p>
-          <div class="video-wrapper">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube-nocookie.com/embed/BpiiahtH_2w?si=2BRjCTxYM9ILxhit"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-
-        <!-- Projekt 6: Helikopterrånet -->
-        <div id="helikopterranet" class="project">
-          <p>
-            En helikopter landar på taket till Sveriges säkraste värdedepå och
-            polisen kan inte göra annat än se på när rånarna försvinner med
-            tiotals miljoner. Inte ett enda skott avlossas.
-            <em>Helikopterrånet</em> skildrar planeringen bakom ett av Sveriges
-            mest spektakulära brott.
-          </p>
-            Dramaserie producerad för Netflix.
-          <p>
-          </p>
-          <div class="video-wrapper">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube-nocookie.com/embed/98Bbyt_-Co8?si=lzokSawCoBY7JcaZ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-        <button id="backButton" style="display: none; margin-bottom: 2rem">
-          Tillbaka
-        </button>
-      </main>
-    </div>
+    <h1>Jesper Ahlcrona</h1>
+    <!-- Mejladressen byggs ihop med JavaScript så att spamrobotar inte hittar den i koden -->
+    <a id="email" href="#">jesper [at] ahlcrona [punkt] co</a>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const links = document.querySelectorAll(".middle a");
-        const projects = document.querySelectorAll(".project");
-        const heading = document.getElementById("projectInfoHeading");
-        const backButton = document.getElementById("backButton");
-        const homeLink = document.getElementById("homeLink");
-
-        function showProjectById(id) {
-          const target = document.getElementById(id);
-          const middle = document.querySelector(".middle");
-          const heading = document.getElementById("projectInfoHeading");
-
-          projects.forEach((project) => (project.style.display = "none"));
-
-          if (target) {
-            target.style.display = "block";
-            heading.style.display = "block";
-            backButton.style.display = "inline-block";
-
-            if (window.innerWidth < 1000) {
-              middle.style.display = "none";
-              backButton.style.display = "inline-block";
-            } else {
-              backButton.style.display = "none";
-            }
-
-          } else {
-            heading.style.display = "none";
-            backButton.style.display = "none";
-
-            if (window.innerWidth < 1000) {
-              middle.style.display = "block";
-            }
-          }
-        }
-        backButton.addEventListener("click", () => {
-          history.pushState(null, "", window.location.pathname);
-          showProjectById("");
-        });
-
-        links.forEach((link) => {
-          link.addEventListener("click", function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute("href").substring(1);
-            history.pushState(null, "", `#${targetId}`);
-            showProjectById(targetId);
-          });
-        });
-
-        const initialHash = window.location.hash.substring(1);
-        showProjectById(initialHash);
-
-        window.addEventListener("popstate", function () {
-          const hash = window.location.hash.substring(1);
-          showProjectById(hash);
-        });
-      });
+      (function () {
+        var u = "repsej".split("").reverse().join("");
+        var d = "oc.anorclha".split("").reverse().join("");
+        var adress = u + "@" + d;
+        var lank = document.getElementById("email");
+        lank.href = "mai" + "lto:" + adress;
+        lank.textContent = adress;
+      })();
     </script>
   </body>
 </html>
